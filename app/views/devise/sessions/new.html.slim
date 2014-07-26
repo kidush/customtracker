@@ -1,0 +1,19 @@
+.pure-g
+	.pure-u-1-4.login
+		= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'pure-form pure-form-aligned'}) do |f|
+			fieldset
+
+				.pure-control-group = f.input :email, class: 'pure-input-1-2', label: 'Email', :input_html => { class: "pure-input-1-2" }
+				.pure-control-group = f.input :password, label: 'Password', :input_html => { class: "pure-input-1-2" }
+
+
+				.pure-controls
+					- if devise_mapping.rememberable?
+						label.pure-checkbox for="remember_me"
+							= f.input :remember_me, as: :boolean
+
+
+					= f.submit "login", class: 'pure-button pure-button-primary'
+					br
+					== render "devise/shared/links"
+
