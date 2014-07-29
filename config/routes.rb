@@ -13,4 +13,9 @@ Rails.application.routes.draw do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
+
+  ### tasks routes
+  # GET task index
+  get '/tasks', to: 'tasks#index'
+
 end

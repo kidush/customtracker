@@ -1,0 +1,20 @@
+.form-index
+	= simple_form_for(@task, html: {class: 'pure-form'}) do |task|
+		fieldset
+			.pure-u-1
+				span.pure-u-3-4
+					input.pure-input-2-3 placeholder="Descreva a tarefa" name="task[name]" type="text"
+					= task.input :project, :collection => @projects, label: false, :input_html => { class: "pure-input-1-3"  }, :placeholder => 'Escolher um projeto'
+				= task.submit "iniciar tarefa", class: 'pure-button button-custom-fiord'
+
+.table-tasks
+	h3.source-sans-pro.weight-300.size-24 Tarefas finalizadas
+	table.pure-u-1.pure-table.pure-table-horizontal.source-sans-pro.weight-300
+		thead.pure-u-1
+			tr.pure-u-1.background-red-salmon
+				th width="60%" Tarefa
+				th width="30%" Projeto
+				th Tempo
+		tbody.pure-u-1
+
+

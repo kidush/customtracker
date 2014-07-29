@@ -3,7 +3,7 @@
 		= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'pure-form pure-form-aligned'}) do |f|
 			fieldset
 
-				.pure-control-group = f.input :email, class: 'pure-input-1-2', label: 'Email', :input_html => { class: "pure-input-1-2" }
+				.pure-control-group = f.input :email, label: 'Email', :input_html => { class: "pure-input-1-2" }
 				.pure-control-group = f.input :password, label: 'Password', :input_html => { class: "pure-input-1-2" }
 
 

@@ -1,3 +1,7 @@
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,300);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+
 /*page Login*/
 .login {
 	max-width: 960px;
@@ -5,18 +9,28 @@
 	margin-top: 150px;
 }
 
-/* Custom buttons PureCss*/
+/* Custom buttons purecss*/
 .button-success,
 .button-error,
 .button-warning,
+.button-custom-abbey,
+.button-custom-fiord,
 .button-secondary {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+.button-custom-abbey {
+  background: rgb(78, 78, 86);
+}
+
+.button-custom-fiord {
+  background: rgb(60, 70, 99);
+}
+
 .button-success {
-  background: rgb(28, 184, 65); /* this is a green */
+  /**/background: rgb(28, 184, 65); /* this is a green */
 }
 
 .button-error {
@@ -30,3 +44,118 @@
 .button-secondary {
   background: rgb(66, 184, 221); /* this is a light blue */
 }
+
+/* Colors */
+/********************************/
+.background-red-roman {
+  background: rgb(218, 99, 93);
+}
+
+.background-blue-fiord {
+  background: rgb(60, 70, 99);
+}
+
+.background-red-salmon {
+  background: rgb(255, 131, 98);
+}
+
+/********************************/
+/*End Colors*/
+
+
+
+/* Fonts */
+/********************************/
+.size-18 {
+  font-size: 18px;
+}
+
+.size-24 {
+  font-size: 24px;
+}
+
+.weight-300 {
+  font-weight: 300
+}
+
+.weight-400 {
+  font-weight: 400
+}
+
+.weight-700 {
+  font-weight: 700
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.josefin-slab {
+  font-family: 'Josefin Slab', serif;
+}
+
+
+/********************************/
+/*End Fonts*/
+
+/* content */
+.content {
+  max-width: 960px;
+  margin: 0 auto !important;
+}
+
+/* index tasks */
+.form-index {
+  text-align: center
+}
+
+.form-index span {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+}
+
+/* form index input*/
+.form-index input[type=text] {
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+}
+
+.form-index select {
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  margin-left: 7px;
+  border-left: 1px solid #ccc;
+}
+
+/* form index button */
+.form-index input[type=submit] {
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.table-tasks table {
+  border: none;
+}
+
+.table-tasks thead {
+  color: white;
+}
+
+.table-tasks th {
+  border: none;
+}
+
+.table-tasks h3 {
+  border-bottom: 1px solid black
+}
+
+/* end index tasks */
+
+
